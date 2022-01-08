@@ -1,3 +1,5 @@
 module.exports = {
-    publicPath: '/scrip-memorize-vue/'
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/scrip-memorize-vue/'
+        : '/'
 }

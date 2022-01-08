@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Memorize</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><router-link to="/">Memorize</router-link></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Navbar Link</a></li>
             </ul>
