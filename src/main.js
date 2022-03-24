@@ -17,14 +17,14 @@ let data = {
       ref: "Mosiah 2:41",
       text: "41 And moreover, I would desire that ye should consider on the blessed and happy state of those that keep the commandments of God.",
       date: null,
-      passedOff: true
+      passedOff: false
     },
     {
       id: 1,
       ref: "Mosiah 2:17",
       text: "17 And behold, I tell you these things that ye may learn wisdom; that ye may learn that when ye are in the service of your fellow beings ye are only in the service of your god.",
       date: null,
-      passedOff: true
+      passedOff: false
     },
     {
       id: 2,
