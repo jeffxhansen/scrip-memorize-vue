@@ -21,6 +21,7 @@
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">{{ scripture.ref }}<i class="material-icons right">close</i></span>
+                                <span class="card-content grey-text text-darken-3">{{ content }}</span>
                                 <input type="range" min="0" max="10" value="10">
                             </div>
                             <div class="card-action">
@@ -68,7 +69,8 @@ export default {
     name: 'Home',
     data() {
         return {
-            scriptureIndex: 0
+            scriptureIndex: 0,
+            sliderSetting: 10
         }
     },
     mounted() {
@@ -83,13 +85,15 @@ export default {
     computed: {
         scriptures() {
             var scriptures = this.$root.$data.getCurrentScriptures();
-            console.log(scriptures)
-            this.empty = (scriptures.length > 0) ? false : true;
+            console.log(scriptures);
             return scriptures;
         },
         empty() {
             var scriptures = this.$root.$data.getCurrentScriptures();
-            return (scriptures.length == 0);
+            return (scriptures.length === 0);
+        },
+        content(scripId) {
+            return "41 And moreover, I would desire that ye should consider on the blessed and happy state of those that keep the commandments of God." + scripId;
         }
     },
     methods: {
